@@ -16,9 +16,9 @@
 		 		<tr>
 		 			<td><%= review.title %></td>
 		 			<td><%= review.body %></td>
-		 			<td><%= link_to "show", review_path(review), class: "show_#{@review}" %></td>
-		 			<td><%= link_to "Edit", edit_review_path(review), class: "edit_#{@review}" %></td>
-		 			<td><%= link_to "Destroy", review_path(review), method: :delete, class: "destroy_#{review}", data: {confirm: "Are you sure?"} %></td>
+		 			<td><%= link_to "show", review_path(review), class: "show_#{review.id}" %></td>
+		 			<td><%= link_to "Edit", edit_review_path(review), class: "edit_#{review.id}" %></td>
+		 			<td><%= link_to "Destroy", review_path(review), method: :delete, class: "destroy_#{review.id}", data: {confirm: "Are you sure?"} %></td>
 		 		</tr>
 		 	<% end %>
 		</tbody>
